@@ -2,8 +2,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Css Tricks</title>
-<link rel="stylesheet" href="css/style.css" type="text/css" />
+<title>Flexbox CSS</title>
+<link rel="stylesheet" href="css/flex.css" type="text/css" />
 </head>
 
 <body>
@@ -271,6 +271,88 @@
   <div>10</div>
   <div>11</div>
   <div>12</div>  
+</div>
+
+<h2>Perfect Center</h2>
+<div class="flex-container perfect_center">
+  <div></div>
+</div>
+
+<h3>Child Elements (Items)</h3>
+<h2>child element</h2>
+<div class="child-container">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div> 
+  <div>4</div>
+</div>
+<!--   Flexbox properties for the child elements:
+
+    order
+    flex-grow
+    flex-shrink
+    flex-basis
+    flex
+    align-self   -->
+<h2>order</h2>
+<div class="child-container child-order">
+  <div style="order: 3">1</div>
+  <div style="order: 2">2</div>
+  <div style="order: 4">3</div> 
+  <div style="order: 1">4</div>
+</div>
+
+<h2>flex-grow</h2>
+<div class="child-container child-order">
+  <div style="flex-grow: 1">1</div>
+  <div style="flex-grow: 1">2</div>
+  <div style="flex-grow: 8">3</div>
+</div>
+
+<h2>flex-shrink</h2>
+<div class="child-container child-order">
+  <div>1</div>
+  <div>2</div>
+  <div style="flex-shrink: 0">3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+  <div>7</div>
+  <div>8</div>
+  <div>9</div>
+  <div>10</div>
+</div>
+
+<h2>flex-basis</h2>
+<div class="child-container child-order">
+  <div>1</div>
+  <div>2</div>
+  <div style="flex-basis: 200px">3</div>
+  <div>4</div>
+</div>
+
+<h2>flex</h2>
+<div class="child-container child-order">
+  <div>1</div>
+  <div>2</div>
+  <div style="flex: 0 0 200px">3</div>
+  <div>4</div>
+</div>
+
+<h2>align-self</h2>
+<div class="child-container child-align-self">
+  <div>1</div>
+  <div>2</div>
+  <div style="align-self: center">3</div>
+  <div>4</div>
+</div>
+
+<h2>align-self example 2</h2>
+<div class="child-container child-align-self">
+  <div>1</div>
+  <div style="align-self: flex-start">2</div>
+  <div style="align-self: flex-end">3</div>
+  <div>4</div>
 </div>
 
 
